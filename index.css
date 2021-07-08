@@ -1,35 +1,39 @@
+body header .navigation a {
+  text-decoration: none;
+  color: white; }
+  body header .navigation a:hover {
+    color: red; }
+
+body header {
+  background-color: #242222;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  body header .header__logo {
+    margin-left: 80px; }
+  body header .navigation {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    place-items: center;
+    justify-self: end; }
+    body header .navigation a {
+      margin-right: 30px; }
+body .logo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  body .logo h4 {
+    margin-top: -20px; }
+
 body {
   background-color: #494848;
-  background-image: url(back.png); }
-  body header {
-    background-color: #241e1e;
-    display: flex;
-    justify-content: space-between; }
-    body header .logo {
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: 100px; }
-      body header .logo h4 {
-        margin-top: -20px; }
-    body header .navigation {
-      display: grid;
-      grid-template-columns: repeat(5, 100px);
-      place-items: center; }
-      body header .navigation a {
-        margin-right: 30px;
-        color: white;
-        text-decoration: none; }
-      body header .navigation a:hover {
-        color: red; }
-  body .intro {
+  background-image: url(images/back.png); }
+  body .title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px; }
-    body .intro .intro-news {
+    margin: 100px 0px; }
+    body .title .title__news {
       background-color: red;
       color: white;
       width: 300px;
@@ -37,7 +41,7 @@ body {
       width: 200px;
       border-radius: 3px;
       margin-bottom: -20px; }
-    body .intro .intro-welcome {
+    body .title .title__welcome {
       background-color: black;
       color: white;
       width: 600px;
@@ -47,9 +51,9 @@ body {
       justify-content: center;
       flex-direction: column;
       border-radius: 5px; }
-    body .intro .intro-words {
+    body .title .title__words {
       background-color: rgba(0, 0, 0, 0.397);
-      color: white;
+      color: #7c7a7a;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -58,5 +62,57 @@ body {
       height: 40px;
       margin-top: -20px;
       border-radius: 5px; }
+  body .space {
+    display: grid;
+    grid-template-columns: 600px 300px;
+    justify-content: center; }
+    body .space .news-title {
+      background-color: rgba(175, 171, 171, 0.26);
+      height: 30px;
+      width: 560px;
+      border-right: 2px solid rgba(255, 0, 0, 0.397);
+      padding-left: 30px;
+      margin-top: 10px; }
+    body .space .news {
+      color: black;
+      display: grid;
+      grid-template-rows: repeat(3, 50px 350px 200px);
+      background-color: white; }
+      body .space .news .news-bp {
+        display: grid;
+        grid-template-columns: 150px 1fr; }
+        body .space .news .news-bp .news-buttons {
+          display: grid;
+          width: 130px; }
+        body .space .news .news-bp .share-button {
+          margin: 3px;
+          color: white;
+          font-weight: bold;
+          display: grid;
+          grid-template-columns: 20px 1fr;
+          align-self: center;
+          border-radius: 5px; }
+        body .space .news .news-bp .vk-button {
+          background-color: rgba(40, 40, 245, 0.349); }
+        body .space .news .news-bp .snap-button {
+          background-color: rgba(255, 255, 0, 0.473); }
+        body .space .news .news-bp .twit-button {
+          background-color: rgba(113, 113, 247, 0.336); }
+        body .space .news .news-bp .gmail-button {
+          background-color: rgba(255, 0, 0, 0.425); }
+        body .space .news .news-bp .link {
+          color: red;
+          margin-left: 300px; }
+    body .space .menu {
+      background-color: #242222;
+      color: white; }
+      body .space .menu .menu__nav {
+        padding-left: 20px;
+        border-right: 2px solid red;
+        background-color: rgba(175, 171, 171, 0.062);
+        height: 35px;
+        color: #bbbbbb;
+        display: flex;
+        align-items: center; }
 
 /*# sourceMappingURL=index.css.map */

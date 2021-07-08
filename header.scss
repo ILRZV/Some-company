@@ -1,0 +1,46 @@
+$font-color: rgb(255, 255, 255);
+$font-gr: rgb(124, 122, 122);
+$main-black: rgb(36, 34, 34);
+
+%tplstyle {
+    text-decoration: none;
+    color: $font-color;
+
+    &:hover {
+        color: red;
+    }
+}
+
+body {
+    header {
+        background-color: $main-black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .header__logo {
+            margin-left: 80px;
+        }
+
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            place-items: center;
+            justify-self: end;
+            a {
+                margin-right: 30px;
+                @extend %tplstyle;
+            }
+        }
+    }
+
+    .logo {
+        color: $font-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h4 {
+            margin-top: -20px;
+        }
+    }
+}
